@@ -1,9 +1,8 @@
 import './App.css'
 import ContactFooter from "./ContactFooter.tsx";
-import Timeline from "./Timeline.tsx";
+import OrgView from "./OrgView.tsx";
 
 function App() {
-
     return (
         <>
             <div className="relative full-width">
@@ -26,15 +25,11 @@ function App() {
                 </div>
                 <div
                     className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
-                    <div className="grid grid-cols-1 md:grid-cols-3">
-                        <button className="btn btn-secondary">ASE</button>
-                        <button className="btn btn-secondary">SWE</button>
-                        <button className="btn btn-secondary">VPG</button>
-                    </div>
+                    <OrgView/>
                 </div>
                 <div
                     className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
-                    <Timeline/>
+                    <h2 className="text-4xl font-bold">The Third slide</h2>
                 </div>
                 <div
                     className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
