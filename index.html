@@ -9,49 +9,5 @@
 <div id="root">
 </div>
 <script src="/src/main.tsx" type="module"></script>
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                keyframes: {
-                    "zoom-in": {
-                        "0%": {
-                            opacity: 0,
-                            transform: "scale3d(0.3, 0.3, 0.3)",
-                        },
-                        "80%": {
-                            opacity: 0.8,
-                            transform: "scale3d(1.1, 1.1, 1.1)",
-                        },
-                        "100%": {
-                            opacity: 1,
-                        },
-                    },
-                    typing: {
-                        "0%": {
-                            width: "0%",
-                            visibility: "hidden"
-                        },
-                        "100%": {
-                            width: "100%"
-                        }
-                    },
-                    blink: {
-                        "50%": {
-                            borderColor: "transparent"
-                        },
-                        "100%": {
-                            borderColor: "white"
-                        }
-                    }
-                },
-                animation: {
-                    typing: "typing 2s steps(40, end), blink .5s infinite"
-                }
-            },
-        },
-        plugins: [],
-    }
-</script>
 </body>
 </html>
